@@ -26,6 +26,12 @@ import { Paragraph } from "@ckeditor/ckeditor5-paragraph";
 import { PasteFromOffice } from "@ckeditor/ckeditor5-paste-from-office";
 import { Table, TableToolbar } from "@ckeditor/ckeditor5-table";
 import { TextTransformation } from "@ckeditor/ckeditor5-typing";
+import {
+  EnterCommand,
+  ShiftEnter,
+  ShiftEnterCommand,
+} from "@ckeditor/ckeditor5-enter";
+import EnterObserver from "@ckeditor/ckeditor5-enter/src/enterobserver";
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
 // See https://ckeditor.com/docs/ckeditor5/latest/installation/plugins/installing-plugins.html for details.
@@ -53,6 +59,8 @@ class Editor extends BalloonEditor {
     Table,
     TableToolbar,
     TextTransformation,
+    ShiftEnter,
+    EnterObserver,
   ];
 
   public static override defaultConfig = {
