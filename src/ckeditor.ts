@@ -26,10 +26,12 @@ import { Paragraph } from "@ckeditor/ckeditor5-paragraph";
 import { PasteFromOffice } from "@ckeditor/ckeditor5-paste-from-office";
 import { Table, TableToolbar } from "@ckeditor/ckeditor5-table";
 import { TextTransformation } from "@ckeditor/ckeditor5-typing";
+
 import {
   EnterCommand,
   ShiftEnter,
   ShiftEnterCommand,
+  Enter,
 } from "@ckeditor/ckeditor5-enter";
 import EnterObserver from "@ckeditor/ckeditor5-enter/src/enterobserver";
 
@@ -61,6 +63,7 @@ class Editor extends BalloonEditor {
     TextTransformation,
     ShiftEnter,
     EnterObserver,
+    Enter,
   ];
 
   public static override defaultConfig = {
